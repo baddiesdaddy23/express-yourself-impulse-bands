@@ -1,0 +1,35 @@
+<%- include('../partials/head', { site, page }) %>
+
+<section class="section container">
+  <div class="kicker">Order</div>
+  <h1>Get <%= site.brand %><span class="tm">™</span></h1>
+  <p class="lede">Fill out the form and we will follow up by email.</p>
+
+  <form class="form" method="POST" action="/order" novalidate>
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" value="<%= (values.name || '') %>" required>
+      <% if (errors.name) { %><div class="error"><%= errors.name %></div><% } %>
+    </div>
+    <div class="field">
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3" required><%= (values.address || '') %></textarea>
+      <% if (errors.address) { %><div class="error"><%= errors.address %></div><% } %>
+    </div>
+    <div class="field">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" value="<%= (values.phone || '') %>" required>
+      <% if (errors.phone) { %><div class="error"><%= errors.phone %></div><% } %>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" value="<%= (values.email || '') %>" required>
+      <% if (errors.email) { %><div class="error"><%= errors.email %></div><% } %>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <p class="tiny-note">All sales final.</p>
+  </form>
+</section>
+
+<%- include('../partials/footer', { site }) %>

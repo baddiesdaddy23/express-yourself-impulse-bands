@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= site.brand %> | <%= site.company %></title>
+  <meta name="description" content="Perceptual enhancement for focused work and play.">
+  <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img class="mark" src="/public/assets/logo.svg" alt="">
+        <span class="name"><%= site.company %></span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link <%= page==='home' ? 'is-active' : '' %>" href="/">Home</a>
+        <a class="nav-link <%= page==='features' ? 'is-active' : '' %>" href="/features">Features</a>
+        <a class="nav-link <%= page==='gallery' ? 'is-active' : '' %>" href="/gallery">Gallery</a>
+        <a class="nav-link <%= page==='order' ? 'is-active' : '' %>" href="/order">Order</a>
+      </nav>
+    </div>
+  </header>
+  <main>

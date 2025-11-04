@@ -1,0 +1,13 @@
+Placeholders and where to drop media
+
+Expected files (used in templates):
+- /public/assets/videos/impulse-video-ad.mp4  -> Home hero video (replaces main image)
+- /public/assets/videos/impulse-hero.mp4      -> Features page inline story video
+- /public/assets/images/upscale-main-ad.png   -> Used as a large billboard image on Features
+- /public/assets/images/upscale-impulse-ad-1.png through upscale-impulse-ad-5.png -> Used in the gallery grid on Home
+
+Notes:
+- If a file is missing, the layout still renders but the box will be empty.
+- Images may contain words or taglines. The page copy avoids repeating those phrases to prevent redundancy.
+- You can add up to six images. Name them with the same pattern so the grid picks them up easily.
+- You can replace any asset with new art using the same filenames.

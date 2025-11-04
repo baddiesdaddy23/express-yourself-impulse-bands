@@ -1,0 +1,4 @@
+<% /* ===== Layout wrapper used only if you want to wrap pages manually ===== */ %>
+<%- include('./partials/head', { site, page }) %>
+  <%- typeof content === 'function' ? content() : '' %>
+<%- include('./partials/footer', { site }) %>

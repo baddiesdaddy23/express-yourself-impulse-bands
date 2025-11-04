@@ -1,0 +1,67 @@
+<%- include('../partials/head', { site, page }) %>
+
+<section class="hero">
+  <div class="hero-media">
+    <div class="video-embed hero-video">
+  <iframe src="https://player.vimeo.com/video/1133423969?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="impulse-video-ad" frameborder="0"></iframe>
+</div>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container hero-content">
+    <h1 class="hero-title"><%= site.brand %><span class="tm">™</span></h1>
+    <p class="hero-tag">Make more of the time you already have. Lock in and move with intent.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/order">Order <%= site.brand %><span class="tm">™</span></a>
+      <a class="btn" href="/features">See how it works</a>
+    </div>
+</div>
+</section>
+
+<section class="section container">
+  <div class="pitch">
+    <div>
+      <div class="kicker">Focus first</div>
+      <h2 class="title">Your zone on command</h2>
+      <p class="text">Tap the band and shift into a clear state where distractions fall away. Tasks feel deliberate and your attention stays on target.</p>
+      <div class="rule"></div>
+      <p class="text">The effect is real and immediate for most people. Exact experience varies by person and context.</p>
+    </div>
+    <div class="media-wrap">
+      <img src="/public/assets/images/upscale-impulse-ad-1.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="kicker center">Reviews</div>
+  <h2 class="center">What early users are saying</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="quote">“I finished a dense chapter in half the usual time and actually remembered it.”</p>
+      <div class="author">— Maya, grad student</div>
+    </div>
+    <div class="review-card">
+      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="quote">“Feels like noise fades and the work snaps into focus. New personal best on the erg.”</p>
+      <div class="author">— Dan, rower</div>
+    </div>
+    <div class="review-card">
+      <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+      <p class="quote">“Coding session turned into flow. Lost track of time—in a good way.”</p>
+      <div class="author">— Priya, software engineer</div>
+    </div>
+    <div class="review-card">
+      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p class="quote">“Practice felt slower, cleaner, and more deliberate.”</p>
+      <div class="author">— Alex, violinist</div>
+    </div>
+    <div class="review-card">
+      <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+      <p class="quote">“My best deep work mornings now have a switch.”</p>
+      <div class="author">— Nina, product manager</div>
+    </div>
+  </div>
+</section>
+
+<%- include('../partials/footer', { site }) %>
